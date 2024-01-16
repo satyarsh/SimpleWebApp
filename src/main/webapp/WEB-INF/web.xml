@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <servlet>
+    <servlet-name>jakarta.ws.rs.core.Application</servlet-name>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jakarta.ws.rs.core.Application</servlet-name>
+    <url-pattern>/rest/*</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>PersonSevlet</display-name>
+    <servlet-name>PersonSevlet</servlet-name>
+    <servlet-class>org.eclipse.jakarta.SimpleWebApp.Controller.PersonSevlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PersonSevlet</servlet-name>
+    <url-pattern>/PersonSevlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetPerson</display-name>
+    <servlet-name>GetPerson</servlet-name>
+    <servlet-class>org.eclipse.jakarta.FirstWebApp.Controller.GetPerson</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetPerson</servlet-name>
+    <url-pattern>/GetPerson</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DatabaseServlet</display-name>
+    <servlet-name>DatabaseServlet</servlet-name>
+    <servlet-class>org.eclipse.jakarta.FirstWebApp.Controller.DatabaseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DatabaseServlet</servlet-name>
+    <url-pattern>/Db</url-pattern>
+  </servlet-mapping>
+</web-app>
